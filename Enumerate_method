@@ -1,0 +1,53 @@
+## Program for illustrate Enumerate function
+
+list_1 = ['apple','mango','grapes','banana','orange']
+
+p_1 = 'strawberry'
+
+object_1 = enumerate(list_1)
+object_2 = enumerate(p_1)
+
+print(list(object_1))
+print(list(object_2))
+
+output=
+[(0, 'apple'), (1, 'mango'), (2, 'grapes'), (3, 'banana'), (4, 'orange')]
+[(0, 's'), (1, 't'), (2, 'r'), (3, 'a'), (4, 'w'), (5, 'b'), (6, 'e'), (7, 'r'), (8, 'r'), (9, 'y')]
+
+
+## using for loop
+# enumerate(iterable, start=0) by default
+
+flowers = ['Hibiscus','Mogra','Jasmine','Delia']
+
+for item in enumerate(flowers):
+    print(item)
+print('\n')
+
+for count,item in enumerate(flowers):
+    print(count,item)
+print('\n')
+
+for key,value in enumerate(flowers,4):    # set counter start to 4 from 0
+    print(key,':',value)
+
+output=
+
+(0, 'Hibiscus')
+(1, 'Mogra')
+(2, 'Jasmine')
+(3, 'Delia')
+
+
+0 Hibiscus
+1 Mogra
+2 Jasmine
+3 Delia
+
+
+4 : Hibiscus
+5 : Mogra
+6 : Jasmine
+7 : Delia
+
+
